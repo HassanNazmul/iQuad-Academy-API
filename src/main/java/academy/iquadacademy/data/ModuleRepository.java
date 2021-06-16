@@ -1,6 +1,7 @@
 package academy.iquadacademy.data;
 
 import academy.iquadacademy.models.Module;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -12,12 +13,12 @@ public interface ModuleRepository {
 
     List<Module> findAll();
 
-//    Module findById(int modID);
-//
-//    Module add(Module module);
-//
-//    boolean update(Module module);
-//
-//    @Transactional
-//    boolean deleteById(int modID);
+    Module findById(int modID);
+
+    Module add(Module module);
+
+    boolean update(Module module);
+
+    @Transactional
+    boolean deleteById(int modID);
 }

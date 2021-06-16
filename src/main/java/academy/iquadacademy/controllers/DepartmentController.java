@@ -35,8 +35,8 @@ public class DepartmentController {
     }
 
     @PostMapping
-    public ResponseEntity<Object> add(@RequestBody Department student) {
-        Result<Department> result = service.add(student);
+    public ResponseEntity<Object> add(@RequestBody Department department) {
+        Result<Department> result = service.add(department);
         if (result.isSuccess()) {
             return new ResponseEntity<>(result.getPayload(), HttpStatus.CREATED);
         }
@@ -44,11 +44,11 @@ public class DepartmentController {
     }
 
     @PutMapping("/{depID}")
-    public ResponseEntity<Object> update(@PathVariable int depID, @RequestBody Department student) {
-        if (depID != student.getDepID()) {
+    public ResponseEntity<Object> update(@PathVariable int depID, @RequestBody Department department) {
+        if (depID != department.getDepID()) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
-        Result<Department> result = service.update(student);
+        Result<Department> result = service.update(department);
         if (result.isSuccess()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
