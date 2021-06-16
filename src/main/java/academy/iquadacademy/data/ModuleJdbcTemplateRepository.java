@@ -1,9 +1,6 @@
 package academy.iquadacademy.data;
 
-import academy.iquadacademy.data.mappers.DepartmentMapper;
 import academy.iquadacademy.data.mappers.ModuleMapper;
-import academy.iquadacademy.models.Department;
-import academy.iquadacademy.models.Module;
 import academy.iquadacademy.models.Module;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;

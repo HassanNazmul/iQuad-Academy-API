@@ -1,7 +1,6 @@
 package academy.iquadacademy.domain;
 
 import academy.iquadacademy.data.TeachersRepository;
-import academy.iquadacademy.models.Student;
 import academy.iquadacademy.models.Teachers;
 import org.springframework.stereotype.Service;
 

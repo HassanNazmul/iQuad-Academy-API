@@ -3,7 +3,6 @@ package academy.iquadacademy.controllers;
 
 import academy.iquadacademy.domain.ModuleService;
 import academy.iquadacademy.domain.Result;
-import academy.iquadacademy.models.Department;
 import academy.iquadacademy.models.Module;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -2,7 +2,6 @@ package academy.iquadacademy.controllers;
 
 import academy.iquadacademy.domain.Result;
 import academy.iquadacademy.domain.TeachersService;
-import academy.iquadacademy.models.Student;
 import academy.iquadacademy.models.Teachers;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
