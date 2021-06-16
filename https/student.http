@@ -1,0 +1,33 @@
+@url = http://localhost:8080/student
+
+### RETURN ALL STUDENT
+GET {{url}} HTTP/1.1
+
+### RETURN STUDENT BY ID
+GET {{url}}/3 HTTP/1.1
+
+### ADD NEW STUDENT
+POST  {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "MIKE",
+    "lastName": "K",
+    "dob": "2000-02-01",
+    "depID": "3"
+}
+
+### UPDATE EXISTING STUDENT
+PUT {{url}}/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "studentID": 3,
+    "firstName": "Georgia",
+    "lastName": "Facello",
+    "dob": "1990-12-31",
+    "depID": "3"
+}
+
+### DELETE STUDENT
+DELETE {{url}}/13 HTTP/1.1
