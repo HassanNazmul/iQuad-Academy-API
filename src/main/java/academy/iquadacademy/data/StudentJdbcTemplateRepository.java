@@ -86,6 +86,7 @@ public class StudentJdbcTemplateRepository implements StudentRepository {
     @Override
     @Transactional
     public boolean deleteById(int studentID) {
+        jdbcTemplate.update("DELETE FROM roster WHERE studentID = ?;", studentID);
        return jdbcTemplate.update("DELETE FROM student WHERE studentID = ?;", studentID) > 0;
     }
 }

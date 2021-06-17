@@ -1,0 +1,48 @@
+iQuadAcademy
+|   iQauadAcademy.iml
+|   pom.xml
+|- src
+|     |- java
+|     |     |- main
+|     |     |     |- academy
+|     |     |     |      |- iQuadAcademy
+|     |     |     |      |      |- controllers
+|     |     |     |      |      |        |- DepartmentController
+|     |     |     |      |      |        |- ErrorResponse
+|     |     |     |      |      |        |- ModuleController
+|     |     |     |      |      |        |- StudentController
+|     |     |     |      |      |        |- TeachersController
+|     |     |     |      |      |- data
+|     |     |     |      |      |    |- mapper
+|     |     |     |      |      |    |     |- DepartmentMapper
+|     |     |     |      |      |    |     |- ModuleMapper
+|     |     |     |      |      |    |     |- StudentMapper
+|     |     |     |      |      |    |     |- TeachersMapper
+|     |     |     |      |      |    |
+|     |     |     |      |      |    |- DepartmentJdbcTemplateRepository
+|     |     |     |      |      |    |- DepartmentRepository
+|     |     |     |      |      |    |- ModuleJdbcTemplateRepository
+|     |     |     |      |      |    |- ModuleRepository
+|     |     |     |      |      |    |- StudentJdbcTemplateRepository
+|     |     |     |      |      |    |- StudentRepository
+|     |     |     |      |      |    |- TeachersJdbcTemplateRepository
+|     |     |     |      |      |    |- TeachersRepository
+|     |     |     |      |      |- domain
+|     |     |     |      |      |    |- DepartmentService
+|     |     |     |      |      |    |- ModuleService
+|     |     |     |      |      |    |- Result
+|     |     |     |      |      |    |- ResultType
+|     |     |     |      |      |    |- StudentService
+|     |     |     |      |      |    |- TeachersService
+|     |     |     |      |      |- model
+|     |     |     |      |      |    |- Department
+|     |     |     |      |      |    |- Module
+|     |     |     |      |      |    |- Student
+|     |     |     |      |      |    |- Teachers
+|     |     |     |      |      |
+|     |     |     |      |      |- iQuadAcademyApplication
+|     |     |     |      |- resources
+|     |     |                   |- application.properties
+|     |     |- test
+|     |     |   |- academy
+|     |     |   |     |- iQuadAcademyApplicationTEST
